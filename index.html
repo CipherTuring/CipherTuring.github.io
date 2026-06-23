@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Nombre | Portafolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- CURSOR PERSONALIZADO -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- LOADER -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-text">
+                <span>P</span><span>O</span><span>R</span><span>T</span>
+                <span>F</span><span>O</span><span>L</span><span>I</span><span>O</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>TN<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link active" data-section="inicio">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link" data-section="sobre-mi">Sobre Mí</a></li>
+                <li><a href="#habilidades" class="nav-link" data-section="habilidades">Habilidades</a></li>
+                <li><a href="#proyectos" class="nav-link" data-section="proyectos">Proyectos</a></li>
+                <li><a href="#contacto" class="nav-link" data-section="contacto">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO / INICIO -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg">
+            <div class="gradient-sphere sphere-1"></div>
+            <div class="gradient-sphere sphere-2"></div>
+            <div class="gradient-sphere sphere-3"></div>
+        </div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge" data-aos="fade-down">
+                <span class="status-dot"></span>
+                Disponible para trabajar
+            </div>
+            <h1 data-aos="fade-up" data-aos-delay="100">
+                <span class="hero-greeting">Hola, soy</span>
+                <span class="hero-name">Tu Nombre</span>
+                <span class="hero-title">
+                    <span id="typewriter"></span>
+                    <span class="typewriter-cursor">|</span>
+                </span>
+            </h1>
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                Creo experiencias digitales excepcionales que combinan
+                <span class="text-gradient">diseño elegante</span> con
+                <span class="text-gradient">código limpio</span>.
+            </p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                <a href="#proyectos" class="btn btn-primary">
+                    <span>Ver Proyectos</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contacto" class="btn btn-outline">
+                    <span>Contactar</span>
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+            </div>
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat">
+                    <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Años Experiencia</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="25">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Proyectos</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="15">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Clientes</span>
+                </div>
+            </div>
+        </div>
+        <a href="#sobre-mi" class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </a>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="section" id="sobre-mi">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">&lt;sobre-mí&gt;</span>
+                <h2 class="section-title">Conóceme</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <!-- Reemplaza con: <img src="assets/tu-foto.jpg" alt="Tu Nombre"> -->
+                        <div class="image-border"></div>
+                        <div class="image-dots"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">3+</span>
+                        <span class="exp-text">Años de<br>Experiencia</span>
+                    </div>
+                </div>
+                <div class="about-content" data-aos="fade-left">
+                    <h3>Desarrollador Full Stack & Diseñador UI/UX</h3>
+                    <p>
+                        Soy un desarrollador apasionado por crear soluciones digitales
+                        que no solo funcionan bien, sino que también se ven increíbles.
+                        Me especializo en construir aplicaciones web modernas y escalables.
+                    </p>
+                    <p>
+                        Cuando no estoy programando, me puedes encontrar explorando
+                        nuevas tecnologías, contribuyendo a proyectos open source o
+                        tomando café mientras diseño interfaces.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Tu Ciudad, País</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>tu@email.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Ingeniería en Sistemas</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Freelancer / Empresa</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary" download>
+                        <span>Descargar CV</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="section section-dark" id="habilidades">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">&lt;habilidades&gt;</span>
+                <h2 class="section-title">Mi Stack Tecnológico</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-tabs" data-aos="fade-up">
+                <button class="tab-btn active" data-tab="frontend">Frontend</button>
+                <button class="tab-btn" data-tab="backend">Backend</button>
+                <button class="tab-btn" data-tab="tools">Herramientas</button>
+            </div>
+            <div class="skills-content">
+                <div class="skills-grid active" id="frontend" data-aos="fade-up">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h4>HTML5</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h4>CSS3</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h4>JavaScript</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h4>React</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-vuejs"></i>
+                        </div>
+                        <h4>Vue.js</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-sass"></i>
+                        </div>
+                        <h4>Sass</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                    </div>
+                </div>
+                <div class="skills-grid" id="backend">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <h4>Node.js</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h4>Python</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4>MongoDB</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4>PostgreSQL</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <h4>PHP</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="65"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h4>Firebase</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
+                    </div>
+                </div>
+                <div class="skills-grid" id="tools">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <h4>Git</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <h4>Docker</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="65"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <h4>Figma</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <h4>Terminal</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <h4>AWS</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="60"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h4>CI/CD</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="section" id="proyectos">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">&lt;proyectos&gt;</span>
+                <h2 class="section-title">Trabajo Destacado</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="design">Diseño</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Proyecto 1 -->
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Ver Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Ver Código">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <h3>E-Commerce Platform</h3>
+                        <p>Plataforma de comercio electrónico completa con carrito, pagos y panel de administración.</p>
+                    </div>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="project-card" data-category="app" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="--placeholder-color: #10b981;">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Ver Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Ver Código">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>PWA</span>
+                        </div>
+                        <h3>Task Manager App</h3>
+                        <p>Aplicación de gestión de tareas con colaboración en tiempo real y notificaciones push.</p>
+                    </div>
+                </div>
+                <!-- Proyecto 3 -->
+                <div class="project-card" data-category="design" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="--placeholder-color: #f59e0b;">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Ver Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Ver Código">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Figma</span>
+                            <span>UI/UX</span>
+                            <span>Prototipo</span>
+                        </div>
+                        <h3>Dashboard UI Kit</h3>
+                        <p>Kit de diseño completo para dashboards con más de 50 componentes reutilizables.</p>
+                    </div>
+                </div>
+                <!-- Proyecto 4 -->
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="--placeholder-color: #8b5cf6;">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Ver Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Ver Código">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>MDX</span>
+                            <span>Tailwind</span>
+                        </div>
+                        <h3>Blog Personal</h3>
+                        <p>Blog con sistema de artículos en markdown, búsqueda y modo oscuro.</p>
+                    </div>
+                </div>
+                <!-- Proyecto 5 -->
+                <div class="project-card" data-category="app" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="--placeholder-color: #ec4899;">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Ver Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Ver Código">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>API REST</span>
+                            <span>Charts</span>
+                        </div>
+                        <h3>Weather Dashboard</h3>
+                        <p>Dashboard meteorológico con datos en tiempo real, mapas interactivos y gráficas.</p>
+                    </div>
+                </div>
+                <!-- Proyecto 6 -->
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="--placeholder-color: #06b6d4;">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Ver Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Ver Código">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>OpenAI</span>
+                            <span>Flask</span>
+                        </div>
+                        <h3>AI Chat Assistant</h3>
+                        <p>Asistente virtual con inteligencia artificial para atención al cliente automatizada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section section-dark" id="contacto">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">&lt;contacto&gt;</span>
+                <h2 class="section-title">Hablemos</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">¿Tienes un proyecto en mente? Me encantaría saber de ti.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:tu@email.com">tu@email.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <span>Tu Ciudad, País</span>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <a href="tel:+1234567890">+1 234 567 890</a>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <h4>Sígueme</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" data-aos="fade-left" id="contactForm">
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="text" id="name" required>
+                            <label for="name">Tu Nombre</label>
+                            <span class="input-line"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="email" id="email" required>
+                            <label for="email">Tu Email</label>
+                            <span class="input-line"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="text" id="subject" required>
+                            <label for="subject">Asunto</label>
+                            <span class="input-line"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <textarea id="message" rows="5" required></textarea>
+                            <label for="message">Tu Mensaje</label>
+                            <span class="input-line"></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Enviar Mensaje</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>TN<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p>Diseñado y desarrollado con <span class="heart">&hearts;</span> por Tu Nombre</p>
+                <p class="footer-year">&copy; <span id="currentYear"></span> Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN SCROLL TOP -->
+    <button class="scroll-top" id="scrollTop" aria-label="Ir arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
